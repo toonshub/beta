@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Redirect</title>
+      
+<script>
+    var iframe = getUrlVars()["id"];
+    function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
+    var d = document;
+</script>
+<script type="text/javascript">
+d.write('<meta http-equiv = "refresh" content = "0; url = https://www.raretoonshub.ml/go/direct/?id='+iframe+'" />')
+</script>
+   </head>
+   <body>
+      <p>Wait for a moment. Redirecting to the page.</p>
+   </body>
+</html>
